@@ -34,9 +34,11 @@ body {
 
 .sidebar {
     flex: 1 1 32ch;
-    align-self: flex-start;
+}
+
+.wrapper {
     position: sticky;
-    top: 0;
+    top: 16px;
 }
 
 .card {
