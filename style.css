@@ -47,6 +47,7 @@ body {
     background-color: #f0f0f0;
     border: 1px solid #ddd;
     border-radius: 0.25em;
+    text-wrap: pretty;
 }
 
 .card > * {
@@ -85,11 +86,30 @@ a {
 
 footer {
     margin-top: 2em;
-    background-color: #e26000;
-    height: 96px;
+    padding: 0.5em 0;
+    border-top: 1px solid #ddd;
+    background: #f0f0f0;
+    width: 100%;
     overflow: hidden;
     position: absolute;
     bottom: 0;
+}
+
+.footer-background {
+    background: url('Monkey.webp') repeat-x;
+    background-size: auto 72px;
+    height: 72px;
+    width: calc(max(3119px, 200%));
+    animation: scrollBackground 20s linear infinite;
+}
+
+@keyframes scrollBackground {
+    0% {
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        transform: translate3d(-1559px, 0, 0);
+      }
 }
 
 .links {
